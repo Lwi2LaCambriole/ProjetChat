@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plumo</title>
-    <link rel="stylesheet" href="../CSS/profil.css">
+    <link rel="stylesheet" href="../CSS/liste.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="../JS/script.js"></script>
 </head>
-<body  onload="uploadAvatar();" style="margin:0px;">
+<body>
 
     <!-- ///////////////////// Section Header ////////////////////// -->
 
@@ -28,58 +29,61 @@
     <!-- /////////////////////////////////////////// -->
 
 
-    <!-- ////////////////// Section Profil ////////////////////// -->
-
     <section>
-    
-        <h1>MON PROFIL</h1>
+        <h1>Vos messages</h1>
 
-        <img src="/IMAGES/Portrait_Placeholder.png" alt="Avatar" class="avatar">
-    
-        <p>Nom</p>
-        <p>Prénom</p>
-        <p>E-mail</p>
-    
-        <hr class="lignecompte">
-    
-        <p>Nombre de messages : <span>nombre</span></p>
-        <p>Votre récepteur préféré : <span>nom prénom</span></p>
-        <p>Compte créé il y a : <span>nombre</span> jours</p>
-    
+        <div class="cherche">
+            <form action="">
+                <input type="search" placeholder="Chercher une discussion...">
+                <i class="fa fa-search"></i>
+            </form>
+        </div>
+
+        <a href="message.html" class="groupe">
+            <img src="../IMAGES/Portrait_Placeholder.png" alt="image-groupe">
+            <div class="texte">
+                <div class="titre">
+                    <h3>Titre</h3>
+                    <p>Heure</p>
+                </div>
+                <p>C'est le contenu du message, maximum 100 caractères</p>
+            </div>
+        </a>
+
+        <a href="message.html" class="groupe">
+            <img src="../IMAGES/Portrait_Placeholder.png" alt="image-groupe">
+            <div class="texte">
+                <div class="titre">
+                    <h3>Titre</h3>
+                    <p>Heure</p>
+                </div>
+                <p>C'est le contenu du message, maximum 100 caractères</p>
+            </div>
+        </a>
+
+        <a href="message.html" class="groupe">
+            <img src="../IMAGES/Portrait_Placeholder.png" alt="image-groupe">
+            <div class="texte">
+                <div class="titre">
+                    <h3>Titre</h3>
+                    <p>Heure</p>
+                </div>
+                <p>C'est le contenu du message, maximum 100 caractères</p>
+            </div>
+        </a>
+
+        <div class="rien">
+            <p>Aucune conversation...</p>
+        </div>
+
+        <a href="contacts" class="ajouter">
+            <svg class="plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.58 119.68"><defs><style>.cls-1{fill:#1572ff;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M124.58,55.49v9.25c0,9.79-6.53,16.32-16.32,16.32H83.78v22.3c0,9.79-6.53,16.32-16.32,16.32H56.58c-9.8,0-16.32-6.53-16.32-16.32V81.06l-23.94-.27C6.53,80.79,0,74.26,0,64.46V55.22C0,45.42,6.53,38.9,16.32,38.9H40.26V16.32C40.26,6.53,46.78,0,56.58,0H67.46c9.79,0,16.32,6.53,16.32,16.32V38.9l24.48.27C118.05,39.17,124.58,45.7,124.58,55.49Z"/></g></g></svg>
+            <p>Nouvelle conversation</p>
+        </a>
+
     </section>
 
-    <!-- /////////////////////////////////////////// -->
 
-    <hr class="lignemodif">
-
-    <!-- ////////////////// Section Modifier ////////////////////// -->
-
-
-    <form method="post">
-        <h1>MODIFIER MON PROFIL</h1>
-        <input class="modif" placeholder="Prénom" value="Prénom actuel" name="Nom" type="text">
-        <p>Erreur : izdqjozjqdoij</p>
-        <input class="modif" placeholder="Nom" value="Nom actuel" name="Prénom" type="text">
-        <p>Erreur : izdqjozjqdoij</p>
-        <input class="modif" placeholder="E-mail" value="E-mail actuel" name="Pseudo" type="text">
-        <p>Erreur : izdqjozjqdoij</p>
-        <input class="modif" placeholder="Nouveau mot de passe" name="mdp1" type="password">
-        <p>Erreur : izdqjozjqdoij</p>
-        <input class="modif" placeholder="Confirmer le mot de passe" name="mdp2" type="password">
-        <p>Erreur : izdqjozjqdoij</p>
-
-        <input id="avatar" name="uploadAvatar" type="file" hidden>
-        <label for="avatar">Nouvelle photo de profil</label>
-        <span id="fichier"></span>
-
-        <input class="btn" type="submit" value="Modifier">
-        <input class="btn" id="supprimer" type="submit" value="Supprimer">
-    </form>
-
-
-
-
-    <!-- /////////////////////////////////////////// -->
 
     <!-- ////////////////// Footer ////////////////////// -->
 
@@ -89,6 +93,8 @@
         <p>Politique d'utilisation des cookies</p>
         <p>© Plumo 2022</p>
     </footer>
+
+    <!-- /////////////////////////////////////////// -->
 
 </body>
 </html>
