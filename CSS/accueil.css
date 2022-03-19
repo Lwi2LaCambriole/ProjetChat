@@ -56,21 +56,33 @@ header {
 
 .logo a svg {
     height: 50px;
+    transition: height 0.25s;
+}
+
+.logo a svg:hover{
+    height: 53px;
 }
 
 .form {
-    font-family: Fredoka;
-    font-weight: 500;
-    font-size: 25px;
     margin-right: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 .form a {
     margin-left: 50px;
     text-decoration: none;
     color: #1572FF;
+    font-family: Fredoka;
+    font-weight: 500;
+    font-size: 25px;
+    transition: font-size 0.25s;
     /* color: #3FFF9C; */
     /* color: #55DBFF; */
+}
+
+.form a:hover {
+    font-size: 27px;
 }
 
 @media (max-width: 1000px) {
