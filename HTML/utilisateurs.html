@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plumo</title>
-    <link rel="stylesheet" href="../CSS/liste.css">
+    <link rel="stylesheet" href="../CSS/utilisateurs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="../JS/script.js"></script>
 </head>
-<body>
+<body  onload="uploadAvatar();" style="margin:0px;">
 
     <!-- ///////////////////// Section Header ////////////////////// -->
 
@@ -30,60 +30,79 @@
     <!-- /////////////////////////////////////////// -->
 
 
+
+    <!-- ////////////////// Section utilisateurs ////////////////////// -->
+
+
     <section>
-        <h1>Vos messages</h1>
+
+        <h1>Liste des utilisateurs</h1>
 
         <div class="cherche">
             <form action="">
-                <input type="search" placeholder="Chercher une discussion...">
+                <input type="search" placeholder="Chercher un utilisateur...">
                 <i class="fa fa-search"></i>
             </form>
         </div>
 
-        <a href="utilisateurs.html" class="ajouter">
-            <svg class="plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.58 119.68"><defs><style>.cls-1{fill:#1572ff;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M124.58,55.49v9.25c0,9.79-6.53,16.32-16.32,16.32H83.78v22.3c0,9.79-6.53,16.32-16.32,16.32H56.58c-9.8,0-16.32-6.53-16.32-16.32V81.06l-23.94-.27C6.53,80.79,0,74.26,0,64.46V55.22C0,45.42,6.53,38.9,16.32,38.9H40.26V16.32C40.26,6.53,46.78,0,56.58,0H67.46c9.79,0,16.32,6.53,16.32,16.32V38.9l24.48.27C118.05,39.17,124.58,45.7,124.58,55.49Z"/></g></g></svg>
-            <p>Nouvelle conversation</p>
-        </a>
-
-        <a href="message.html" class="groupe">
-            <img src="../IMAGES/Portrait_Placeholder.png" alt="image-groupe">
-            <div class="texte">
-                <div class="titre">
-                    <h3>Titre</h3>
-                    <p>Heure</p>
+        <div class="user">
+            <div class="couleur"></div>
+            <img src="../IMAGES/Portrait_Placeholder.png" alt="portrait">
+            <h2>Guillaume Le Goff</h2>
+            <div class="stats">
+                <div class="discussions">
+                    <h3>12</h3>
+                    <p>Discussions</p>
                 </div>
-                <p>C'est le contenu du message, maximum 100 caractères</p>
-            </div>
-        </a>
-
-        <a href="message.html" class="groupe">
-            <img src="../IMAGES/Portrait_Placeholder.png" alt="image-groupe">
-            <div class="texte">
-                <div class="titre">
-                    <h3>Titre</h3>
-                    <p>Heure</p>
+                <div class="messages">
+                    <h3>1000</h3>
+                    <p>Messages envoyés</p>
                 </div>
-                <p>C'est le contenu du message, maximum 100 caractères</p>
             </div>
-        </a>
+            <a href="message.html">Envoyer un message</a>
+        </div>
 
-        <a href="message.html" class="groupe">
-            <img src="../IMAGES/Portrait_Placeholder.png" alt="image-groupe">
-            <div class="texte">
-                <div class="titre">
-                    <h3>Titre</h3>
-                    <p>Heure</p>
+        <div class="user">
+            <div class="couleur"></div>
+            <img src="../IMAGES/Portrait_Placeholder.png" alt="portrait">
+            <h2>Alexandre Schaeffer</h2>
+            <div class="stats">
+                <div class="discussions">
+                    <h3>12</h3>
+                    <p>Discussions</p>
                 </div>
-                <p>C'est le contenu du message, maximum 100 caractères</p>
+                <div class="messages">
+                    <h3>1000</h3>
+                    <p>Messages envoyés</p>
+                </div>
             </div>
-        </a>
+            <a href="message.html">Envoyer un message</a>
+        </div>
 
-        <div class="rien">
-            <p>Aucune conversation...</p>
+        <div class="user">
+            <div class="couleur"></div>
+            <img src="../IMAGES/Portrait_Placeholder.png" alt="portrait">
+            <h2>Louis Raillard</h2>
+            <div class="stats">
+                <div class="discussions">
+                    <h3>12</h3>
+                    <p>Discussions</p>
+                </div>
+                <div class="messages">
+                    <h3>1000</h3>
+                    <p>Messages envoyés</p>
+                </div>
+            </div>
+            <a href="message.html">Envoyer un message</a>
         </div>
 
     </section>
 
+
+
+
+
+    <!-- /////////////////////////////////////////// -->
 
 
     <!-- ////////////////// Footer ////////////////////// -->
@@ -94,8 +113,6 @@
         <p>Politique d'utilisation des cookies</p>
         <p>© Plumo 2022</p>
     </footer>
-
-    <!-- /////////////////////////////////////////// -->
 
 </body>
 </html>

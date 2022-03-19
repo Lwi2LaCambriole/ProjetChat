@@ -21,22 +21,6 @@ body {
     align-items: center;
 }
 
-.ligne-co {
-    height: 5px;
-    background-color: #62e4a1;
-    width: 50%;
-    border: none;
-    margin: 50px 0 50px 0;
-}
-
-.ligne-in {
-    height: 5px;
-    background-color: #55DBFF;
-    width: 50%;
-    border: none;
-    margin: 50px 0 50px 0;
-}
-
 /* /////////// Header /////////////// */
 
 header {
@@ -79,7 +63,7 @@ header {
     /* color: #55DBFF; */
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
     .logo a svg {
         height: 40px;
@@ -95,7 +79,11 @@ header {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+
+    .logo {
+        margin-left: 20px;
+    }
 
     .logo a svg {
         height: 30px;
@@ -103,10 +91,28 @@ header {
 
     .form {
         font-size: 15px;
+        margin-right: 20px;
     }
 
     .form a {
         margin-left: 10px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+
+    .logo a svg {
+        height: 25px;
+    }
+
+    .form {
+        font-size: 12px;
+    }
+
+    .form a {
+        margin-left: 8px;
     }
 
 }
@@ -245,6 +251,7 @@ form .modif {
     font-weight: 400;
     font-size: 14px;
     transition: border 0.25s;
+    border: #000000 solid 2px;
 }
 
 form .modif:hover {
