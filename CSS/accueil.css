@@ -91,12 +91,18 @@ header {
         height: 40px;
     }
 
-    .form {
-        font-size: 20px;
+    .logo a svg:hover{
+        height: 43px;
     }
 
+
     .form a {
+        font-size: 20px;
         margin-left: 20px;
+    }
+
+    .form a:hover {
+        font-size: 22px;
     }
 
 }
@@ -110,14 +116,20 @@ header {
     .logo a svg {
         height: 30px;
     }
+    .logo a svg:hover{
+        height: 33px;
+    }
 
     .form {
-        font-size: 15px;
         margin-right: 20px;
     }
 
     .form a {
+        font-size: 15px;
         margin-left: 10px;
+    }
+    .form a:hover {
+        font-size: 17px;
     }
 
 
@@ -128,13 +140,16 @@ header {
     .logo a svg {
         height: 25px;
     }
-
-    .form {
-        font-size: 12px;
+    .logo a svg:hover{
+        height: 27px;
     }
 
     .form a {
+        font-size: 12px;
         margin-left: 8px;
+    }
+    .form a:hover {
+        font-size: 13px;
     }
 
 }
